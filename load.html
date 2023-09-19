@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio Player</title>
+</head>
+<body>
+  <main>
+    <div>
+      <h1>YOWASHI Audio Player</h1>
+      <p>読み込むプレイリストをアップロードしてください</p>
+      <form enctype="multipart/form-data" action="#" method="post" id="uploadForm">
+        <input type="file" name="fileToUpload" id="fileToUpload" accept=".ypl">
+        <input type="submit" value="アップロード">
+      </form>
+    </div>
+    <hr>
+    <div id="error"></div>
+    <div id="Playlist">
+      <h2 id="Name"></h1>
+      <p id="Description"></p>
+      <p id="Modified"></p>
+      <p id="FileSize"></p>
+      <p id="SongNum"></p>
+      <div id="Songs"></div>
+    </div>
+  </main>
+  <script src="./js/script.js"></script>
+  <script src="./js/load.js"></script>
+</body>
+</html>
