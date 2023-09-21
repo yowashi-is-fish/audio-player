@@ -62,7 +62,7 @@ form.onsubmit = function(event) {
           songDiv.appendChild(songTitle);
 
           const composerP = document.createElement('p');
-          composerP.textContent = `作曲者 : ${songData.Comp}`; // Compを作曲者として表示
+          composerP.textContent = `作曲者 : ${songData.comp}`; // Compを作曲者として表示
           songDiv.appendChild(composerP);
 
           const elements = ['ext'];
